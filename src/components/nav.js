@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { navigation as links } from '../constants';
 
-function App() {
+function Nav() {
   return (
     <nav>
       <ul>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Nav;
