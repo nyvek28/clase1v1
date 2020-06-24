@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, About, Contacts } from './pages';
+import { Home, About, Contacts, Photos } from './pages';
 import { Nav } from './components';
 import {
   BrowserRouter as Router,
@@ -18,6 +18,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/photos">
+            <Photos />
           </Route>
           <Route path="/">
             <Home />
