@@ -1,13 +1,23 @@
 import React from 'react';
 
-function Photos() {
+class Photos extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = { id: 01 }
+  }
+
+  onSelect(){
+  
+  }
+
+  render() { 
   return (
     <div className="Photos">
       Photos
-      <br></br>
-      <img src="../../images/photo.jpg"></img>
+    
     </div>
   );
+  }
 }
 
 export default Photos;
