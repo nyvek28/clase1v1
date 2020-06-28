@@ -1,23 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { PhotoList, Photo } from '../components';
+import {link} from 'react-router-dom'
 
-class Photos extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = { id: 01 }
-  }
-
-  onSelect(){
+function Photos(){
   
-  }
 
-  render() { 
+  
+
+
   return (
-    <div className="Photos">
-      Photos
-    
+    <div>
+      <PhotoList/>
     </div>
-  );
-  }
+  )
+
 }
 
-export default Photos;
+export default Photos

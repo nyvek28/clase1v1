@@ -1,37 +1,37 @@
 export default [
     {
-        photoAddress: '',
-        PhotoDescription: '',
-        PhotoId: '',
-        Ahutor: '',
-        Name:''
+        destination: '/photos/1',
+        description: '',
+        Id: '1',
+        author: '',
+        label:'hello'
     },
     {
-        photoAddress: '',
-        PhotoDescription: '',
-        PhotoId: '',
-        Ahutor: '',
-        Name:''
+        destination: '/photos/2',
+        description: '',
+        Id: '2',
+        author: '',
+        label:'Hi'
     },
     {
-        photoAddress: '',
-        PhotoDescription: '',
-        PhotoId: '',
-        Ahutor: '',
-        Name:''
+        destination: '/photos/3',
+        description: '',
+        Id: '3',
+        author: '',
+        label:'Hola'
     },
     {
-        photoAddress: '',
-        PhotoDescription: '',
-        PhotoId: '',
-        Ahutor: '',
-        Name:''
+        destination: '/photos/4',
+        description: '',
+        Id: '4',
+        author: '',
+        label:'Hole'
     },
     {
-        photoAddress: '',
-        PhotoDescription: '',
-        PhotoId: '',
-        Ahutor: '',
-        Name:''
+        destination: '/photos/5',
+        description: '',
+        Id: '5',
+        author: '',
+        label:'Holas'
     }
 ]

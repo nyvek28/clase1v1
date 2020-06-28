@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, About, Contacts, Photos } from './pages';
-import { Nav } from './components';
+import { Nav, Photo } from './components';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,12 +19,13 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/photos">
+          <Route path="/photos" exact>
             <Photos />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
+          <Route path="/photos/:id" component={Photo} />
         </Switch>
       </Router>
     </div>
