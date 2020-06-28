@@ -12,7 +12,7 @@ export default [
     destination: '/about'
   },
   {
-    label: 'Photos',
-    destination: '/photos'
+    label: 'Art',
+    destination: '/art'
   }
 ]

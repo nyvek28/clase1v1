@@ -19,13 +19,13 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/photos" exact>
+          <Route path="/art" exact>
             <Photos />
           </Route>
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/photos/:id" component={Photo} />
+          <Route path="/art/:id" component={Photo} />
         </Switch>
       </Router>
     </div>

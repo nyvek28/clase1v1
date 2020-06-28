@@ -1,31 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { photos as photo } from '../constants'
+import { El_Greco, execution, Judit, Kripal, Weyden } from '../assets/index'
+import './photo.css'
 
 function Photo({ match }) {
-    console.log(photo)
+
+    useEffect(() => {
+        fetch();
+    }, []);
 
 
-    const [photoId, setPhoto] = useState(match.params.id)
+    const [photoId, setPhoto] = useState({})
+
+
     //https://www.youtube.com/watch?v=Law7wfdg_ls
     //const [photoInfo, setPhotoInfo] = useState(0);
     //setPhotoInfo(photo.Number(match.params.id)
-    function fetch() {
-        const picId = photo.filter(photo => photo.id == photoId ? photo.label : Error)
-        setPhoto(picId)
+
+
+    const fetch = async () => {
+        const found = await photo.find(pic => pic.Id == match.params.id)
+        setPhoto(found)
     }
 
 
     return (
-        <div>
+        <div style={{ display: 'flex', justifyContent:'center' }}>
             <div>
-                {
-                    function fetch() {
-                        const picId = photo.filter(photo => photo.id == photoId ? photo.label : 'Error')
-                        setPhoto(picId)
-                    }
-                }
+                <h1>{photoId.label}</h1>
+                <div>
+                    <img src={photoId.image} style={{ maxWidth: "600px", maxHeight: "800px" }}></img>
+                </div>
+                <h2>{photoId.author}</h2>
+                <h3>{photoId.description}</h3>
             </div>
-            <h1>{photoId}</h1>
         </div>
     );
 }
